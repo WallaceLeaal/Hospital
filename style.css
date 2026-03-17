@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+h1{
+    color: coral;
+    text-align: center;
+    
+}
+
+section{
+background: white;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 10px;
+
+}
+form{
+    display: inline-flex;
+    flex-direction: column;
+    width: 300px;
+}
+input{
+    margin-bottom: 10px;
+    padding: 8px;
+}
+button{
+    background: lightcoral;
+    color: white;
+    border: color black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background: lightcoral;
+    color: white;
+}
+
+.foto-paciente{
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+}
+
+li{
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+li::before{
+    content: "";
+    background-image: url(happy-face.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
