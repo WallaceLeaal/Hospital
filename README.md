@@ -1,4 +1,4 @@
-# 🏥 Centro Médico de Olhos - Interface Profissional
+# 🏥 Centro Médico Petter - Interface Profissional
 
 [![GitHub Pages](https://img.shields.io/badge/Deploy-GitHub%20Pages-blue?style=flat-square&logo=github)](https://wallaceleaal.github.io/Hospital/)
 
