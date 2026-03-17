@@ -1,47 +1,69 @@
+<!-- Oi! Esse comando aqui embaixo avisa ao navegador que estamos usando o HTML mais moderno de todos! -->
 <!DOCTYPE html>
+
+<!-- Aqui começa o nosso site. O 'lang' avisa que vamos falar em Português do Brasil! -->
 <html lang="pt-br">
+
 <head>
+    <!-- Essa parte é como se fosse o 'cérebro' do site. O usuário não vê, mas é onde ficam as configurações -->
+    
+    <!-- Esse comando serve para o site entender acentos como á, é, í e o cedilha (ç) -->
     <meta charset="UTF-8">
+    
+    <!-- Isso aqui faz o site ficar bonito tanto no computador quanto no celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Centro Médico Oftalmo</title>
+    <!-- É o nome que aparece lá em cima, na aba do navegador -->
+    <title>Central de Atendimento Petter</title>
+
+    <!-- Aqui estamos chamando um arquivo de 'estilo' (CSS) para dar cor e beleza ao site -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" href="hospital.webp" type="image/x-icon">
-
+    <!-- Sabe aquele desenho pequenininho que fica na aba do site? É esse comando que coloca ele lá! -->
+    <link rel="shortcut icon" href="Imagens/hospital-logo-site.webp" type="image/x-icon">
 </head>
+
 <body>
+    <!-- O 'Body' é o corpo do site. Tudo o que aparece na tela fica aqui dentro! -->
 
-    <h1>Centro Médico de Olhos</h1>
+    <!-- O H1 é o título principal, o maior de todos! -->
+    <h1>Centro Médico Petter</h1>
 
+    <!-- 'Section' é como se fosse uma caixinha ou um capítulo para organizar o site -->
     <section>
+        <!-- O 'Form' é um formulário, tipo aqueles que a gente preenche na escola -->
         <form>
+            <h2>Cadastro de Médico</h2>
 
-    <h2>Cadastro de Médico</h2>
+            <!-- 'Label' é o texto e 'Input' é a caixinha onde a pessoa digita -->
+            <label>Nome do Médico</label>
+            <input type="text" placeholder="Digite o nome">
 
-       <label>Nome do Médico</label>
-       <input type="text" placeholder="Digite o nome">
+            <label>Especialidade</label>
+            <input type="text" placeholder="Digite a especialidade">
 
+            <label>Preço por hora</label>
+            <!-- O tipo 'number' só deixa a pessoa digitar números -->
+            <input type="number" placeholder="Digite o valor">
 
-       <label>Especialidade</label>
-       <input type="text" placeholder="Digite a especialidade">
-
-
-       <label>Preço por hora</label>
-       <input type="number" placeholder="Digite o valor">
-       <button type="submit">Cadastrar Médico</button>
-    
+            <!-- O botão para enviar todas as informações que digitamos -->
+            <button type="submit">Cadastrar Médico</button>
         </form>
     </section>
+
     <section>
         <h2>Médicos do Hospital</h2>
+        <!-- 'Table' cria uma tabela, igual a do Excel ou do horário das aulas -->
         <table>
+            <!-- 'TR' é uma linha da tabela -->
             <tr>
+                <!-- 'TH' é o título de cada coluna (fica em negrito) -->
                 <th>Nome do Médico</th>
                 <th>Especialidade</th>
                 <th>Preço por hora</th>
             </tr>
             <tr>
+                <!-- 'TD' é o quadradinho com a informação dentro -->
                 <td>Dra. Larissa Leal</td>
                 <td>Endocrinologista</td>
                 <td>R$ 250.00</td>
@@ -58,22 +80,26 @@
             </tr>
         </table>
     </section>
+
     <section>
         <h2>Informações do Paciente</h2>
-        <img src="veio.png" alt="Foto do Paciente" class="foto-paciente">
+        <!-- 'Img' serve para mostrar uma foto. O 'alt' é o que aparece se a foto sumir -->
+        <img src="Imagens/veio.png" alt="Foto do Paciente" class="foto-paciente">
         
         <h3>Sintomas</h3>
 
+        <!-- 'UL' é uma lista com bolinhas (lista não ordenada) -->
         <ul>
+            <!-- 'LI' é cada item da nossa listinha -->
             <li>Coceira</li>
-
             <li>Febre</li>
-
             <li>Cegueira</li>
-
             <li>Calvice</li>
-
         </ul>
     </section>
+
+    <!-- O 'Footer' é o rodapé, o finalzinho da página onde colocamos quem criou o site -->
+    <footer>Copyright © Wallace Leal-2026</footer>
+ 
 </body>
 </html>

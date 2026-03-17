@@ -1,77 +1,131 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: antiquewhite;
-    margin: 20px;
-}
-
-h1{
-    color: coral;
-    text-align: center;
+/* O BODY é o corpo do site, tudo o que aparece na tela */
+body {
+    /* Define o estilo da letra */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
-}
-
-section{
-background: white;
-padding: 20px;
-margin-bottom: 20px;
-border-radius: 10px;
-
-}
-form{
-    display: inline-flex;
-    flex-direction: column;
-    width: 300px;
-}
-input{
-    margin-bottom: 10px;
-    padding: 8px;
-}
-button{
-    background: lightcoral;
-    color: white;
-    border: color black;
-    padding: 10px;
-    cursor: pointer;
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th, td{
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-}
-th{
-    background: lightcoral;
-    color: white;
-}
-
-.foto-paciente{
-    width: 200px;
-    border: none;
-    border-radius: 10px;
-}
-
-li{
-    list-style: none;
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    line-height: 20px;
-}
-
-li::before{
-    content: "";
-    background-image: url(happy-face.png);
-    background-size: contain;
+    /* Tamanho da letra (coloquei 1.2rem para os textos não ficarem gigantes como o título) */
+    font-size: 1.2rem; 
+    
+    /* Uma sombra de leve nas letras para parecer que estão saindo da tela */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    
+    /* Espaço nas bordas para o conteúdo não grudar no teto */
+    padding: 40px 0;
+    
+    /* Imagem de fundo com um filtro escuro para o texto aparecer melhor */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(Imagens/hospitalsingapura.jpg);
+    
+    /* Faz a imagem cobrir a tela inteira sem sobrar espaço branco */
+    background-size: cover; 
+    background-attachment: fixed; /* A imagem fica parada enquanto você rola o site */
     background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    background-position: center;
+    margin: 0;
+}
+
+/* H1 é o título principal, o nome do hospital */
+h1 {
+    /* SteelBlue é um azul acinzentado muito sério e elegante */
+    color: SteelBlue; 
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+/* SECTION são as caixas brancas onde ficam as informações */
+section {
+    /* Branco bem transparente (0.8) para ver o fundo do hospital atrás */
+    background: rgba(255, 255, 255, 0.8);
+    
+    /* Deixa o fundo embaçado, como se fosse um vidro fosco */
+    backdrop-filter: blur(10px);
+    
+    padding: 30px;
+    margin-bottom: 30px;
+    
+    /* Arredonda as pontas das caixas */
+    border-radius: 15px;
+    
+    /* Define a largura máxima e centraliza na tela */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Cria uma sombra em volta da caixa para dar profundidade */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* FORM é onde a gente digita os dados para cadastrar */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ocupa todo o espaço da caixa branca */
+}
+
+/* INPUT são as caixinhas de texto onde o usuário escreve */
+input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid Gray; /* Borda cinza para ser discreta */
+    border-radius: 5px;
+}
+
+/* BUTTON é o botão de clicar */
+button {
+    /* DarkSlateGray é um cinza quase preto, muito profissional */
+    background: DarkSlateGray;
+    color: White;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer; /* Faz o mouse virar uma "mãozinha" */
+}
+
+/* TABLE é a tabela que mostra os médicos cadastrados */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gruda as linhas da tabela */
+    background: White;
+}
+
+/* TH e TD são as células (quadradinhos) da tabela */
+th, td {
+    border: 1px solid LightGray;
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* TH é a primeira linha da tabela (o cabeçalho) */
+th {
+    /* MidnightBlue é o azul mais escuro e sério que existe */
+    background: MidnightBlue;
+    color: White;
+}
+
+/* Estilo para a foto do paciente */
+.foto-paciente {
+    width: 150px;
+    border-radius: 50%; /* Deixa a foto redondinha */
+    border: 3px solid MidnightBlue;
+    margin-bottom: 15px;
+}
+
+/* LI são os itens da lista de sintomas */
+li {
+    list-style: disc;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333; /* Cinza bem escuro para o texto */
+}
+
+
+/* Rodapé do site */
+footer {
+    text-align: center;
+    color: White;
+    padding: 20px;
+    font-size: 0.9rem;
 }
